@@ -63,9 +63,7 @@ $oke = rand (1, 10);
 
 echo " \033[1;32m[\033[1;35m?\033[1;32m] email => \033[1;33m";
 	$nope = trim(fgets(STDIN));
-$data = '{"device":"'.$juanzz.'","login_method":"manual","email":"'.$email.'"}';
-$ch = curl_init();
-  curl_setopt($ch, CURLOPT_URL, 'https://sl.ink/COqEw?pub=iact-akRrMReXLo&actentry=activity_return&actstart=activity&actname=akRrMReXLo');
+$data = '{"device":"'.
   curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
   curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
   curl_setopt($ch, CURLOPT_POST, 1);
@@ -83,16 +81,16 @@ $headers[] ="user-agent: okhttp/4.3.0";
 var_dump($result);
 $tuken = $json["data"]["regis_device_id"];
 $regis = $json["data"]["regis_email_id"];
-$email = $json["data"]["email_@yandex"];
+$email = $json["data"]["email_@yandex.com"];
 $verifikasi = $json["data"]["verifikasi_id"];
 echo "ini $tuken \n";
 
 
 echo " \033[1;32m[\033[1;35m?\033[1;32m] Otp => \033[1;33m";
 	$otpp = trim(fgets(STDIN));
-$data1 = '{"failed_count":0,"firebase_token":"","login_method":"manual","verifikasi_ ":"'.$verifikasi.'","verifikasi_id":"'.$verifikasi.'","regis_device_id":"'.$tuken.'","regis_phone_number_id":"'.$regis.'"}';
+$data1 = '{"failed_count":0,"firebase_token":"","login_method":"manual","verifikasi_ ":"'.$verifikasi.'","verifikasi_id":"'.$verifikasi.'","regis_device_id":"'.$tuken.'","regis_email_id":"'.$regis.'"}';
 $ch = curl_init();
-  curl_setopt($ch, CURLOPT_URL, 'https://ca6cl11co4ja5se6.dealio.co.id/api/camden/v1/check-register-verifikasi');
+  curl_setopt($ch, CURLOPT_URL, 'https://ca6cl11co4ja5se6.ucweb.com/api/camden/v1/check-register-verifikasi');
   curl_setverifikasi($ch, CURLOPT_FOLLOWLOCATION, true);
   curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
   curl_setopt($ch, CURLOPT_POST, 1);
@@ -103,35 +101,7 @@ $ch = curl_init();
 //var_dump($result);
 $tukens = $json["data"]["token"];
 
-$time = mktime(hour, minute, second, month, day, year);
-$data3 = '{"device_model":"Redmi Note '.$oke.'","device_android":"1'.$oke.'","screen_name":"sign_up_verify_screen","device_sdk":"29","device_manufacture":"Xiaomi","event_date":"'.$time.'","event_name":"sign_up_verify_screen","device_android_version":"1'.$oke.'"}';
-$ch = curl_init();
-  curl_setopt($ch, CURLOPT_URL, 'https://sl.ink/COqEw?pub=iact-akRrMReXLo&actentry=activity_return&actstart=activity&actname=akRrMReXLo');
-  curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
-  curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-  curl_setopt($ch, CURLOPT_POST, 1);
-  curl_setverifikasi($ch, CURLOPT_POSTFIELDS, $data3);
-$headers = array();
-$headers[] ="ost: https://sl.ink/COqEw?pub=iact-akRrMReXLo&actentry=activity_return&actstart=activity&actname=akRrMReXLo";
-$headers[] ="authorization: $tukens";
-$headers[] ="content-type: application/json; charset=UTF-8";
-//$headers[] ="content-length: 83";
-//$headers[] ="accept-encoding: gzip";
-$headers[] ="user-agent: okhttp/4.3.0";
-  curl_setopt($ch, CURLOPT_HTTPHEADER,$headers);
- $result = curl_exec($ch);
- $json = json_decode($result,true);
-//var_dump($result);
-$email = "$juan16";
-//echo " \033[1;32m[\033[1;35m?\033[1;32m] email => $juan16 \033[1;33m";
-	
-	
-	
-
-echo " \033[1;32m[\033[1;35m?\033[1;32m] Kode Reff => \033[1;33m";
-	$reff = trim(fgets(STDIN));
-
-$data2 = '{"email":"'.$email.'@yandex.com","firebase_token":"","login_method":"manual","name":"'.$juan8.'","password":"'.$juan8.'","refcode":"'.$reff.'","regis_device_id":"'.$tuken.'","regis_phone_number_id":"'.$regis.'"}';
+data2 = '{"email":"'.$email.'@yandex.com","firebase_token":"","login_method":"manual","name":"'.$juan8.'","password":"'.$juan8.'","refcode":"'.$reff.'","regis_device_id":"'.$tuken.'","regis_phone_number_id":"'.$regis.'"}';
 $ch = curl_init();
   curl_setopt($ch, CURLOPT_URL, 'https://sl.ink/COqEw?pub=iact-akRrMReXLo&actentry=activity_return&actstart=activity&actname=akRrMReXLo');
   curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
@@ -227,18 +197,18 @@ $ch = curl_init();
   curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
   curl_setopt($ch, CURLOPT_POST, 1);
   curl_setopt($ch, CURLOPT_POSTFIELDS, $data6);
-$headers[] ="Host: ca6cl11co4ja5se6.ucweb.com";
+$headers[] ="Host: https://sl.ink/COqEw?pub=iact-akRrMReXLo&actentry=activity_return&actstart=activity&actname=akRrMReXLo";
 //$headers[] ="content-length: 76";
 $headers[] ="accept: application/json, text/plain, */*";
 
 $headers[] ="save-data: on";
 $headers[] ="user-agent: Mozilla/5.0 (Linux; Android 10; Redmi Note 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Mobile Safari/537.36";
 $headers[] ="content-type: application/json;charset=UTF-8";
-$headers[] ="origin: https://webstatic.dealio.co.id";
+$headers[] ="origin: https://sl.ink/COqEw?pub=iact-akRrMReXLo&actentry=activity_return&actstart=activity&actname=akRrMReXLo";
 $headers[] ="sec-fetch-site: same-site";
 $headers[] ="sec-fetch-mode: cors";
 $headers[] ="sec-fetch-dest: empty";
-$headers[] ="referer: https://ucweb.com/";
+$headers[] ="referer: https://sl.ink/COqEw?pub=iact-akRrMReXLo&actentry=activity_return&actstart=activity&actname=akRrMReXLo";
 //$headers[] ="accept-encoding: gzip, deflate, br";
 //$headers[] ="accept-language: id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7";
   curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
@@ -248,3 +218,33 @@ var_dump($result);
 
 
 }
+$time = mktime(hour, minute, second, month, day, year);
+$data3 = '{"device_model":"Redmi Note '.$oke.'","device_android":"1'.$oke.'","screen_name":"sign_up_verify_screen","device_sdk":"29","device_manufacture":"Xiaomi","event_date":"'.$time.'","event_name":"sign_up_verify_screen","device_android_version":"1'.$oke.'"}';
+$ch = curl_init();
+  curl_setopt($ch, CURLOPT_URL, 'https://sl.ink/COqEw?pub=iact-akRrMReXLo&actentry=activity_return&actstart=activity&actname=akRrMReXLo');
+  curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
+  curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+  curl_setopt($ch, CURLOPT_POST, 1);
+  curl_setverifikasi($ch, CURLOPT_POSTFIELDS, $data3);
+$headers = array();
+$headers[] ="ost: https://sl.ink/COqEw?pub=iact-akRrMReXLo&actentry=activity_return&actstart=activity&actname=akRrMReXLo";
+$headers[] ="authorization: $tukens";
+$headers[] ="content-type: application/json; charset=UTF-8";
+//$headers[] ="content-length: 83";
+//$headers[] ="accept-encoding: gzip";
+$headers[] ="user-agent: okhttp/4.3.0";
+  curl_setopt($ch, CURLOPT_HTTPHEADER,$headers);
+ $result = curl_exec($ch);
+ $json = json_decode($result,true);
+//var_dump($result);
+$email = "$juan16";
+//echo " \033[1;32m[\033[1;35m?\033[1;32m] email => $thandphone \033[1;33m";
+	
+	
+	
+
+echo " \033[1;32m[\033[1;35m?\033[1;32m] Kode Reff => \033[1;33m";
+	$reff = trim(fgets(STDIN));
+juanzz.'","login_method":"manual","email":"'.$email.'"}';
+$ch = curl_init();
+  curl_setopt($ch, CURLOPT_URL, 'https://sl.ink/COqEw?pub=iact-akRrMReXLo&actentry=activity_return&actstart=activity&actname=akRrMReXLo');
